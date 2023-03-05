@@ -30,6 +30,10 @@ int main()
         ptr = pos + k;
     }
     if(ptr < n) res += numlamp(n-ptr,k);
+
+    if(k == 0){
+        res = n - m + 1; 
+    }
     printf("%d",res);
     return 0;
 }
